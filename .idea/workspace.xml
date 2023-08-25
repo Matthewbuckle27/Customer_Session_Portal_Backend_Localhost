@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf3c1a47-143b-4f7f-82f6-333d2dd08f50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/aop/LoggingAspectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/exception/ApiExceptionHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/repository/SessionRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/ProjectCharterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/ProjectCharterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/advice/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/config/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/config/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/controller/SessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/ArchiveFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/ArchiveFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/CustomerDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/SessionRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/SessionRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/SessionResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/dto/SessionResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/entity/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/entity/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/entity/SessionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/entity/SessionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/exception/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/exception/ApiExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/service/SessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/service/impl/SessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/service/impl/SessionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/controller/SessionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/controller/SessionControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/service/SessionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter/service/SessionServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TmQ4t5ujlZGnzgjvw18qYOXUZG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/matthewb/Desktop/Think Nxt/CustomerSessionPortal/project-charter&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.maveric.projectcharter.service" />
+      <recent name="com.maveric.projectcharter.exception" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.maveric.projectcharter.controller" />
+      <recent name="com.maveric.projectcharter.advice" />
+      <recent name="com.maveric.projectcharter.config" />
+      <recent name="com.maveric.projectcharter.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ProjectCharterApplication">
+    <configuration name="ProjectCharterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.maveric.projectcharter.ProjectCharterApplication" />
+      <module name="project-charter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maveric.projectcharter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoggingAspectTest.testLogMethodArguments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-charter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maveric.projectcharter.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maveric.projectcharter.aop" />
+      <option name="MAIN_CLASS_NAME" value="com.maveric.projectcharter.aop.LoggingAspectTest" />
+      <option name="METHOD_NAME" value="testLogMethodArguments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionServiceTest.testDeleteSession_ServiceException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-charter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maveric.projectcharter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maveric.projectcharter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.maveric.projectcharter.service.SessionServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteSession_ServiceException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionServiceTest.testGetSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-charter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maveric.projectcharter.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maveric.projectcharter.service" />
+      <option name="MAIN_CLASS_NAME" value="com.maveric.projectcharter.service.SessionServiceTest" />
+      <option name="METHOD_NAME" value="testGetSession" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="projectcharter in project-charter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-charter" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/maveric/projectcharter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProjectCharterApplication" />
+        <item itemvalue="JUnit.projectcharter in project-charter" />
+        <item itemvalue="JUnit.SessionServiceTest.testGetSession" />
+        <item itemvalue="JUnit.SessionServiceTest.testDeleteSession_ServiceException" />
+        <item itemvalue="JUnit.LoggingAspectTest.testLogMethodArguments" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf3c1a47-143b-4f7f-82f6-333d2dd08f50" name="Changes" comment="" />
+      <created>1691645590070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691645590070</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project_charter$controller_in_project_charter.ic" NAME="controller in project-charter Coverage Results" MODIFIED="1692608033296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/project_charter$projectcharter_in_project_charter.ic" NAME="projectcharter in project-charter Coverage Results" MODIFIED="1692889602413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/project_charter$SessionServiceTest_testDeleteSession_ServiceException.ic" NAME="SessionServiceTest.testDeleteSession_ServiceException Coverage Results" MODIFIED="1692808250232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.maveric.projectcharter.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>
