@@ -14,10 +14,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = Constants.CROSS_ORIGIN_URL)
 @RestController
 @Validated
-@RequestMapping("/sessions")
+@RequestMapping(Constants.SESSION_MAPPING)
 public class SessionController {
 
     @Autowired
@@ -60,10 +60,10 @@ public class SessionController {
      * @throws ApiRequestException if there's an issue with the API request.
      * @throws ServiceException    If there is an issue in the service layer during processing.
      */
-    @GetMapping("/{status}")
+    @GetMapping(Constants.PATH_VARIABLE_STATUS)
     public ResponseEntity<GetResponse<SessionResponseDTO>> getSessions
-    (@PathVariable String status, @RequestParam(name = "pageNo", defaultValue = "0") int offset,
-     @RequestParam(name = "pageSize", defaultValue = "5") int pageSize)
+    (@PathVariable String status, @RequestParam(name = Constants.PAGE_NO, defaultValue = Constants.PAGE_NO_VALUE) int offset,
+     @RequestParam(name = Constants.PAGE_SIZE, defaultValue = Constants.PAGE_SIZE_VALUE) int pageSize)
             throws ApiRequestException, ServiceException {
         Page<SessionResponseDTO> sessionResponseDTOPage = sessionService.getSessions(status, offset, pageSize);
         getResponse.setTotalElements(sessionResponseDTOPage.getTotalElements());
@@ -81,7 +81,7 @@ public class SessionController {
      * @throws ApiRequestException If there is an issue with the API request.
      * @throws ServiceException    If there is an issue in the service layer during processing.
      */
-    @PutMapping("/{sessionId}")
+    @PutMapping(Constants.PATH_VARIABLE_SESSION_ID)
     public ResponseEntity<CreateUpdateResponse> updateSession(@PathVariable @NotNull String sessionId, @RequestBody @Valid UpdateSessionRequestDto updateSessionRequestDto)
             throws ApiRequestException, ServiceException {
         SessionResponseDTO sessionResponseDTO = sessionService.updateSession(sessionId, updateSessionRequestDto);
@@ -99,7 +99,7 @@ public class SessionController {
      * @throws ApiRequestException If there is an issue with the API request.
      * @throws ServiceException    If there is an issue in the service layer during processing.
      */
-    @DeleteMapping("/{sessionId}")
+    @DeleteMapping(Constants.PATH_VARIABLE_SESSION_ID)
     public ResponseEntity<DeleteArchiveResponse> deleteSession(@PathVariable @NotNull String sessionId)
             throws ApiRequestException, ServiceException {
         deleteArchiveResponse = sessionService.deleteSession(sessionId);
@@ -114,7 +114,7 @@ public class SessionController {
      * @throws ApiRequestException If there is an issue with the API request.
      * @throws ServiceException    If there is an issue with the service while archiving the session.
      */
-    @PutMapping("/archive/{sessionId}")
+    @PutMapping(Constants.PATH_VARIABLE_ARCHIVE)
     public ResponseEntity<DeleteArchiveResponse> archiveSession(@PathVariable @NotNull String sessionId)
             throws ApiRequestException, ServiceException {
         deleteArchiveResponse = sessionService.archiveSession(sessionId);
