@@ -25,7 +25,7 @@ public class CustomerServiceImpl implements CustomerService {
     private ModelMapper modelMapper;
 
     @Override
-    public String  createCustomer(CustomerDTO customerDTO) {
+    public String createCustomer(CustomerDTO customerDTO) {
         try {
             Customer customer = modelMapper.map(customerDTO, Customer.class);
             customerRepository.save(customer);
@@ -35,5 +35,4 @@ public class CustomerServiceImpl implements CustomerService {
             throw new ServiceException(e.getMessage());
         }
     }
-
 }
