@@ -14,8 +14,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+
 @RestController
+@CrossOrigin(origins = Constants.CROSS_ORIGIN_URL)
 @Validated
 @RequestMapping(Constants.SESSION_MAPPING)
 public class SessionController {

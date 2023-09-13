@@ -56,7 +56,7 @@ public class Constants {
     //Controller Mapping
     public static final String CUSTOMER_MAPPING = "/customer";
     public static final String SESSION_MAPPING = "/sessions";
-    public static final String CROSS_ORIGIN_URL = "http://172.16.238.164:4200";
+    public static final String CROSS_ORIGIN_URL = "*";
     public static final String[] ALLOWED_METHODS = {"GET", "POST", "PUT", "DELETE", "PATCH"};
     public static final String ADD_MAPPING = "/**";
     public static final String PATH_VARIABLE_STATUS = "/{status}";

@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bf3c1a47-143b-4f7f-82f6-333d2dd08f50" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/customer_session_portal.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/customer_session_portal.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/config/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/config/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/maveric/projectcharter/controller/SessionController.java" afterDir="false" />
