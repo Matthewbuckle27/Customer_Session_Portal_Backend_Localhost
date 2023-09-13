@@ -1,287 +1,59 @@
-2023-09-12T11:33:54.937+05:30  INFO 7140 --- [main] c.m.p.ProjectCharterApplicationTests     : Starting ProjectCharterApplicationTests using Java 17.0.7 with PID 7140 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T11:33:54.970+05:30  INFO 7140 --- [main] c.m.p.ProjectCharterApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T11:33:57.457+05:30  INFO 7140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T11:33:57.714+05:30  INFO 7140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 221 ms. Found 3 JPA repository interfaces.
-2023-09-12T11:34:00.542+05:30  INFO 7140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T11:34:00.823+05:30  INFO 7140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T11:34:00.830+05:30  INFO 7140 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T11:34:01.605+05:30  INFO 7140 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T11:34:02.127+05:30  INFO 7140 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T11:34:02.252+05:30  INFO 7140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T11:34:03.429+05:30  INFO 7140 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380fdcf2
-2023-09-12T11:34:03.435+05:30  INFO 7140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T11:34:04.775+05:30  INFO 7140 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T11:34:07.440+05:30  INFO 7140 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T11:34:07.834+05:30  INFO 7140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T11:34:10.866+05:30  WARN 7140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T11:34:12.743+05:30  INFO 7140 --- [main] c.m.p.ProjectCharterApplicationTests     : Started ProjectCharterApplicationTests in 19.196 seconds (process running for 27.053)
-2023-09-12T11:34:14.470+05:30  INFO 7140 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.exception.ApiExceptionHandlerTest]: ApiExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:34:14.488+05:30  INFO 7140 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.exception.ApiExceptionHandlerTest
-2023-09-12T11:34:15.604+05:30  INFO 7140 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.controller.SessionControllerTest]: SessionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:34:15.637+05:30  INFO 7140 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.controller.SessionControllerTest
-2023-09-12T11:34:16.370+05:30  INFO 7140 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.repository.SessionRepositoryTest]: SessionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:34:16.388+05:30  INFO 7140 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.repository.SessionRepositoryTest
-2023-09-12T11:34:16.591+05:30  INFO 7140 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.aop.LoggingAspectTest]: LoggingAspectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:34:16.606+05:30  INFO 7140 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.aop.LoggingAspectTest
-2023-09-12T11:34:17.182+05:30  INFO 7140 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.SessionServiceTest]: SessionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:34:17.199+05:30  INFO 7140 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.SessionServiceTest
-2023-09-12T11:34:17.698+05:30 ERROR 7140 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:34:17.751+05:30 ERROR 7140 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:34:17.888+05:30 ERROR 7140 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:34:17.920+05:30 ERROR 7140 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:34:17.979+05:30  INFO 7140 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T11:34:17.983+05:30  INFO 7140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T11:34:18.000+05:30  INFO 7140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T11:50:30.020+05:30  INFO 11332 --- [main] c.m.p.controller.CustomerControllerTest  : Starting CustomerControllerTest using Java 17.0.7 with PID 11332 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T11:50:30.024+05:30  INFO 11332 --- [main] c.m.p.controller.CustomerControllerTest  : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T11:50:32.058+05:30  INFO 11332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T11:50:32.208+05:30  INFO 11332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
-2023-09-12T11:50:33.544+05:30  INFO 11332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T11:50:33.722+05:30  INFO 11332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T11:50:33.727+05:30  INFO 11332 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T11:50:34.096+05:30  INFO 11332 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T11:50:34.448+05:30  INFO 11332 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T11:50:34.500+05:30  INFO 11332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T11:50:35.210+05:30  INFO 11332 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e3d168e
-2023-09-12T11:50:35.215+05:30  INFO 11332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T11:50:35.938+05:30  INFO 11332 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T11:50:37.314+05:30  INFO 11332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T11:50:37.460+05:30  INFO 11332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T11:50:39.350+05:30  WARN 11332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T11:50:40.536+05:30  INFO 11332 --- [main] c.m.p.controller.CustomerControllerTest  : Started CustomerControllerTest in 11.34 seconds (process running for 15.104)
-2023-09-12T11:50:42.059+05:30  INFO 11332 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.ProjectCharterApplicationTests]: ProjectCharterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:50:42.067+05:30  INFO 11332 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.ProjectCharterApplicationTests
-2023-09-12T11:50:42.078+05:30  INFO 11332 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.exception.ApiExceptionHandlerTest]: ApiExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:50:42.094+05:30  INFO 11332 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.exception.ApiExceptionHandlerTest
-2023-09-12T11:50:42.579+05:30  INFO 11332 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.controller.SessionControllerTest]: SessionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:50:42.584+05:30  INFO 11332 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.controller.SessionControllerTest
-2023-09-12T11:50:43.038+05:30  INFO 11332 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.repository.SessionRepositoryTest]: SessionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:50:43.056+05:30  INFO 11332 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.repository.SessionRepositoryTest
-2023-09-12T11:50:43.179+05:30  INFO 11332 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.aop.LoggingAspectTest]: LoggingAspectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:50:43.193+05:30  INFO 11332 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.aop.LoggingAspectTest
-2023-09-12T11:50:43.449+05:30  INFO 11332 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.SessionServiceTest]: SessionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T11:50:43.458+05:30  INFO 11332 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.SessionServiceTest
-2023-09-12T11:50:43.838+05:30 ERROR 11332 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:50:43.882+05:30 ERROR 11332 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:50:43.985+05:30 ERROR 11332 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:50:44.012+05:30 ERROR 11332 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T11:50:44.062+05:30  INFO 11332 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T11:50:44.068+05:30  INFO 11332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T11:50:44.084+05:30  INFO 11332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T11:59:39.627+05:30  INFO 13444 --- [main] c.m.p.service.CustomerServiceTest        : Starting CustomerServiceTest using Java 17.0.7 with PID 13444 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T11:59:39.629+05:30  INFO 13444 --- [main] c.m.p.service.CustomerServiceTest        : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T11:59:40.672+05:30  INFO 13444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T11:59:40.765+05:30  INFO 13444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
-2023-09-12T11:59:41.648+05:30  INFO 13444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T11:59:41.765+05:30  INFO 13444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T11:59:41.769+05:30  INFO 13444 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T11:59:42.087+05:30  INFO 13444 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T11:59:42.342+05:30  INFO 13444 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T11:59:42.374+05:30  INFO 13444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T11:59:42.912+05:30  INFO 13444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44aed6a4
-2023-09-12T11:59:42.915+05:30  INFO 13444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T11:59:43.403+05:30  INFO 13444 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T11:59:44.318+05:30  INFO 13444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T11:59:44.474+05:30  INFO 13444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T11:59:46.018+05:30  WARN 13444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T11:59:46.909+05:30  INFO 13444 --- [main] c.m.p.service.CustomerServiceTest        : Started CustomerServiceTest in 7.731 seconds (process running for 9.132)
-2023-09-12T11:59:48.841+05:30  INFO 13444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T11:59:48.843+05:30  INFO 13444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T11:59:48.854+05:30  INFO 13444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T12:00:20.098+05:30  INFO 19640 --- [main] c.m.p.controller.CustomerControllerTest  : Starting CustomerControllerTest using Java 17.0.7 with PID 19640 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T12:00:20.100+05:30  INFO 19640 --- [main] c.m.p.controller.CustomerControllerTest  : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T12:00:21.308+05:30  INFO 19640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T12:00:21.402+05:30  INFO 19640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
-2023-09-12T12:00:22.495+05:30  INFO 19640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T12:00:22.662+05:30  INFO 19640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T12:00:22.668+05:30  INFO 19640 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T12:00:23.029+05:30  INFO 19640 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:00:23.286+05:30  INFO 19640 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T12:00:23.316+05:30  INFO 19640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T12:00:23.818+05:30  INFO 19640 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b05bd7
-2023-09-12T12:00:23.822+05:30  INFO 19640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T12:00:24.591+05:30  INFO 19640 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:00:25.619+05:30  INFO 19640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T12:00:25.764+05:30  INFO 19640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:00:27.388+05:30  WARN 19640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T12:00:28.421+05:30  INFO 19640 --- [main] c.m.p.controller.CustomerControllerTest  : Started CustomerControllerTest in 8.782 seconds (process running for 11.358)
-2023-09-12T12:00:30.287+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.ProjectCharterApplicationTests]: ProjectCharterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:30.293+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.ProjectCharterApplicationTests
-2023-09-12T12:00:30.302+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.CustomerServiceTest]: CustomerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:30.311+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.CustomerServiceTest
-2023-09-12T12:00:30.638+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.exception.ApiExceptionHandlerTest]: ApiExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:30.650+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.exception.ApiExceptionHandlerTest
-2023-09-12T12:00:30.956+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.controller.SessionControllerTest]: SessionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:30.958+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.controller.SessionControllerTest
-2023-09-12T12:00:31.329+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.repository.SessionRepositoryTest]: SessionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:31.338+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.repository.SessionRepositoryTest
-2023-09-12T12:00:31.400+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.aop.LoggingAspectTest]: LoggingAspectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:31.409+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.aop.LoggingAspectTest
-2023-09-12T12:00:31.655+05:30  INFO 19640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.SessionServiceTest]: SessionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:31.659+05:30  INFO 19640 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.SessionServiceTest
-2023-09-12T12:00:31.723+05:30  INFO 19640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:00:31.727+05:30  INFO 19640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T12:00:31.748+05:30  INFO 19640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T12:00:38.121+05:30  INFO 1432 --- [main] c.m.p.controller.CustomerControllerTest  : Starting CustomerControllerTest using Java 17.0.7 with PID 1432 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T12:00:38.127+05:30  INFO 1432 --- [main] c.m.p.controller.CustomerControllerTest  : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T12:00:40.229+05:30  INFO 1432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T12:00:40.379+05:30  INFO 1432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 3 JPA repository interfaces.
-2023-09-12T12:00:41.803+05:30  INFO 1432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T12:00:41.977+05:30  INFO 1432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T12:00:41.981+05:30  INFO 1432 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T12:00:42.358+05:30  INFO 1432 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:00:42.852+05:30  INFO 1432 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T12:00:42.904+05:30  INFO 1432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T12:00:43.576+05:30  INFO 1432 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@149b53fa
-2023-09-12T12:00:43.580+05:30  INFO 1432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T12:00:44.347+05:30  INFO 1432 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:00:46.147+05:30  INFO 1432 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T12:00:46.312+05:30  INFO 1432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:00:48.917+05:30  WARN 1432 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T12:00:50.782+05:30  INFO 1432 --- [main] c.m.p.controller.CustomerControllerTest  : Started CustomerControllerTest in 13.528 seconds (process running for 17.654)
-2023-09-12T12:00:52.710+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.ProjectCharterApplicationTests]: ProjectCharterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:52.720+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.ProjectCharterApplicationTests
-2023-09-12T12:00:52.734+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.CustomerServiceTest]: CustomerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:52.747+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.CustomerServiceTest
-2023-09-12T12:00:53.188+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.exception.ApiExceptionHandlerTest]: ApiExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:53.205+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.exception.ApiExceptionHandlerTest
-2023-09-12T12:00:53.520+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.controller.SessionControllerTest]: SessionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:53.522+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.controller.SessionControllerTest
-2023-09-12T12:00:53.992+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.repository.SessionRepositoryTest]: SessionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:54.012+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.repository.SessionRepositoryTest
-2023-09-12T12:00:54.132+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.aop.LoggingAspectTest]: LoggingAspectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:54.143+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.aop.LoggingAspectTest
-2023-09-12T12:00:54.436+05:30  INFO 1432 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.SessionServiceTest]: SessionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:00:54.439+05:30  INFO 1432 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.SessionServiceTest
-2023-09-12T12:00:54.624+05:30 ERROR 1432 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:00:54.662+05:30 ERROR 1432 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:00:54.761+05:30 ERROR 1432 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:00:54.782+05:30 ERROR 1432 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:00:54.822+05:30  INFO 1432 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:00:54.828+05:30  INFO 1432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T12:00:54.849+05:30  INFO 1432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T12:21:36.347+05:30  INFO 13892 --- [main] c.m.p.generator.SessionIdGeneratorTest   : Starting SessionIdGeneratorTest using Java 17.0.7 with PID 13892 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T12:21:36.350+05:30  INFO 13892 --- [main] c.m.p.generator.SessionIdGeneratorTest   : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T12:21:37.538+05:30  INFO 13892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T12:21:37.646+05:30  INFO 13892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
-2023-09-12T12:21:38.662+05:30  INFO 13892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T12:21:38.816+05:30  INFO 13892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T12:21:38.821+05:30  INFO 13892 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T12:21:39.250+05:30  INFO 13892 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:21:39.474+05:30  INFO 13892 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T12:21:39.500+05:30  INFO 13892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T12:21:39.949+05:30  INFO 13892 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7019d619
-2023-09-12T12:21:39.952+05:30  INFO 13892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T12:21:40.442+05:30  INFO 13892 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:21:41.360+05:30  INFO 13892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T12:21:41.513+05:30  INFO 13892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:21:43.248+05:30  WARN 13892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T12:21:44.275+05:30  INFO 13892 --- [main] c.m.p.generator.SessionIdGeneratorTest   : Started SessionIdGeneratorTest in 8.396 seconds (process running for 10.1)
-2023-09-12T12:21:46.397+05:30  INFO 13892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:21:46.401+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T12:21:46.420+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T12:54:15.379+05:30  INFO 16184 --- [main] c.m.p.controller.CustomerControllerTest  : Starting CustomerControllerTest using Java 17.0.7 with PID 16184 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T12:54:15.384+05:30  INFO 16184 --- [main] c.m.p.controller.CustomerControllerTest  : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T12:54:17.468+05:30  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T12:54:17.617+05:30  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
-2023-09-12T12:54:18.999+05:30  INFO 16184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T12:54:19.154+05:30  INFO 16184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T12:54:19.159+05:30  INFO 16184 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T12:54:19.546+05:30  INFO 16184 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:54:19.887+05:30  INFO 16184 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T12:54:19.944+05:30  INFO 16184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T12:54:20.596+05:30  INFO 16184 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@149b53fa
-2023-09-12T12:54:20.599+05:30  INFO 16184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T12:54:21.303+05:30  INFO 16184 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T12:54:22.649+05:30  INFO 16184 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T12:54:22.800+05:30  INFO 16184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:54:24.746+05:30  WARN 16184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T12:54:25.953+05:30  INFO 16184 --- [main] c.m.p.controller.CustomerControllerTest  : Started CustomerControllerTest in 11.558 seconds (process running for 15.778)
-2023-09-12T12:54:27.550+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.ProjectCharterApplicationTests]: ProjectCharterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:27.556+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.ProjectCharterApplicationTests
-2023-09-12T12:54:27.567+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.CustomerServiceTest]: CustomerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:27.575+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.CustomerServiceTest
-2023-09-12T12:54:27.938+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.exception.ApiExceptionHandlerTest]: ApiExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:27.957+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.exception.ApiExceptionHandlerTest
-2023-09-12T12:54:28.350+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.controller.SessionControllerTest]: SessionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:28.352+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.controller.SessionControllerTest
-2023-09-12T12:54:28.798+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.repository.SessionRepositoryTest]: SessionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:28.813+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.repository.SessionRepositoryTest
-2023-09-12T12:54:28.912+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.aop.LoggingAspectTest]: LoggingAspectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:28.920+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.aop.LoggingAspectTest
-2023-09-12T12:54:29.220+05:30  INFO 16184 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.SessionServiceTest]: SessionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T12:54:29.222+05:30  INFO 16184 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.SessionServiceTest
-2023-09-12T12:54:29.442+05:30 ERROR 16184 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:54:29.498+05:30 ERROR 16184 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:54:29.622+05:30 ERROR 16184 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:54:29.648+05:30 ERROR 16184 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T12:54:29.685+05:30  INFO 16184 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T12:54:29.690+05:30  INFO 16184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T12:54:29.714+05:30  INFO 16184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T14:21:42.673+05:30  INFO 18268 --- [main] c.m.p.controller.CustomerControllerTest  : Starting CustomerControllerTest using Java 17.0.7 with PID 18268 (started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T14:21:42.676+05:30  INFO 18268 --- [main] c.m.p.controller.CustomerControllerTest  : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T14:21:43.791+05:30  INFO 18268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T14:21:43.874+05:30  INFO 18268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
-2023-09-12T14:21:44.703+05:30  INFO 18268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T14:21:44.825+05:30  INFO 18268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T14:21:44.829+05:30  INFO 18268 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T14:21:45.176+05:30  INFO 18268 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T14:21:45.415+05:30  INFO 18268 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T14:21:45.445+05:30  INFO 18268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T14:21:46.015+05:30  INFO 18268 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f10d055
-2023-09-12T14:21:46.017+05:30  INFO 18268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T14:21:46.516+05:30  INFO 18268 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T14:21:47.486+05:30  INFO 18268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T14:21:50.454+05:30  INFO 18268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T14:21:51.886+05:30  WARN 18268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T14:21:52.910+05:30  INFO 18268 --- [main] c.m.p.controller.CustomerControllerTest  : Started CustomerControllerTest in 10.643 seconds (process running for 12.221)
-2023-09-12T14:21:55.059+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.ProjectCharterApplicationTests]: ProjectCharterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:55.091+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.ProjectCharterApplicationTests
-2023-09-12T14:21:55.121+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.CustomerServiceTest]: CustomerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:55.152+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.CustomerServiceTest
-2023-09-12T14:21:55.663+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.exception.ApiExceptionHandlerTest]: ApiExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:55.710+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.exception.ApiExceptionHandlerTest
-2023-09-12T14:21:56.102+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.controller.SessionControllerTest]: SessionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:56.106+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.controller.SessionControllerTest
-2023-09-12T14:21:56.639+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.repository.SessionRepositoryTest]: SessionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:56.661+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.repository.SessionRepositoryTest
-2023-09-12T14:21:56.761+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.aop.LoggingAspectTest]: LoggingAspectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:56.779+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.aop.LoggingAspectTest
-2023-09-12T14:21:57.121+05:30  INFO 18268 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.maveric.projectcharter.service.SessionServiceTest]: SessionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-12T14:21:57.126+05:30  INFO 18268 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.maveric.projectcharter.ProjectCharterApplication for test class com.maveric.projectcharter.service.SessionServiceTest
-2023-09-12T14:21:57.367+05:30 ERROR 18268 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T14:21:57.416+05:30 ERROR 18268 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T14:21:57.520+05:30 ERROR 18268 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T14:21:57.547+05:30 ERROR 18268 --- [main] c.m.p.service.impl.SessionServiceImpl    : null
-2023-09-12T14:21:57.589+05:30  INFO 18268 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T14:21:57.591+05:30  INFO 18268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T14:21:57.721+05:30  INFO 18268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-12T14:52:24.478+05:30  INFO 20544 --- [restartedMain] c.m.p.ProjectCharterApplication          : Starting ProjectCharterApplication using Java 17.0.7 with PID 20544 (C:\Users\matthewb\Downloads\project-charter (1)\project-charter\target\classes started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
-2023-09-12T14:52:24.482+05:30  INFO 20544 --- [restartedMain] c.m.p.ProjectCharterApplication          : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T14:52:24.558+05:30  INFO 20544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-09-12T14:52:24.559+05:30  INFO 20544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-09-12T14:52:25.791+05:30  INFO 20544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-12T14:52:25.874+05:30  INFO 20544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
-2023-09-12T14:52:27.276+05:30  INFO 20544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-12T14:52:27.296+05:30  INFO 20544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-12T14:52:27.296+05:30  INFO 20544 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-12T14:52:27.408+05:30  INFO 20544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-12T14:52:27.409+05:30  INFO 20544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2850 ms
-2023-09-12T14:52:27.756+05:30  INFO 20544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-12T14:52:27.880+05:30  INFO 20544 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-12T14:52:27.884+05:30  INFO 20544 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-12T14:52:28.151+05:30  INFO 20544 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T14:52:28.322+05:30  INFO 20544 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-12T14:52:28.353+05:30  INFO 20544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-12T14:52:28.868+05:30  INFO 20544 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2807abc0
-2023-09-12T14:52:28.873+05:30  INFO 20544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-12T14:52:29.341+05:30  INFO 20544 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-12T14:52:30.520+05:30  INFO 20544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-12T14:52:31.868+05:30  INFO 20544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T14:52:33.287+05:30  WARN 20544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-12T14:52:34.294+05:30  INFO 20544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-09-12T14:52:34.342+05:30  INFO 20544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-12T14:52:34.351+05:30  INFO 20544 --- [restartedMain] c.m.p.ProjectCharterApplication          : Started ProjectCharterApplication in 10.391 seconds (process running for 10.989)
-2023-09-12T15:18:01.925+05:30  INFO 20544 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-12T15:18:01.940+05:30  INFO 20544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-12T15:18:02.252+05:30  INFO 20544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-13T14:31:28.788+05:30  INFO 2876 --- [restartedMain] c.m.p.ProjectCharterApplication          : Starting ProjectCharterApplication using Java 17.0.7 with PID 2876 (C:\Users\matthewb\Downloads\project-charter (1)\project-charter\target\classes started by matthewb in C:\Users\matthewb\Downloads\project-charter (1)\project-charter)
+2023-09-13T14:31:28.809+05:30  INFO 2876 --- [restartedMain] c.m.p.ProjectCharterApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-09-13T14:31:28.920+05:30  INFO 2876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-13T14:31:28.921+05:30  INFO 2876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-13T14:31:30.363+05:30  INFO 2876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-13T14:31:30.475+05:30  INFO 2876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+2023-09-13T14:31:32.491+05:30  INFO 2876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-13T14:31:32.519+05:30  INFO 2876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-13T14:31:32.521+05:30  INFO 2876 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-13T14:31:32.674+05:30  INFO 2876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-13T14:31:32.675+05:30  INFO 2876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3752 ms
+2023-09-13T14:31:33.257+05:30  INFO 2876 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-13T14:31:33.517+05:30  INFO 2876 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-09-13T14:31:33.526+05:30  INFO 2876 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-13T14:31:33.901+05:30  INFO 2876 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-13T14:31:34.167+05:30  INFO 2876 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-13T14:31:34.195+05:30  INFO 2876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-13T14:31:34.850+05:30  INFO 2876 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4226051e
+2023-09-13T14:31:34.853+05:30  INFO 2876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-13T14:31:35.479+05:30  INFO 2876 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-13T14:31:37.223+05:30  INFO 2876 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-13T14:31:38.222+05:30  INFO 2876 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-13T14:31:40.790+05:30  WARN 2876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-13T14:31:42.417+05:30  INFO 2876 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-13T14:31:42.514+05:30  INFO 2876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-13T14:31:42.540+05:30  INFO 2876 --- [restartedMain] c.m.p.ProjectCharterApplication          : Started ProjectCharterApplication in 14.46 seconds (process running for 15.226)
+2023-09-13T14:32:08.938+05:30  INFO 2876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-13T14:32:08.941+05:30  INFO 2876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-13T14:32:08.968+05:30  INFO 2876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2023-09-13T14:32:09.154+05:30  INFO 2876 --- [http-nio-8080-exec-1] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionController.getSessions(..)
+2023-09-13T14:32:09.217+05:30  INFO 2876 --- [http-nio-8080-exec-1] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionServiceImpl.getSessions(..)
+2023-09-13T14:32:09.636+05:30 ERROR 2876 --- [http-nio-8080-exec-1] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionServiceImpl.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:09.637+05:30 ERROR 2876 --- [http-nio-8080-exec-1] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionController.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:09.749+05:30  WARN 2876 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maveric.projectcharter.exception.ApiRequestException: NO SESSION FOUND]
+2023-09-13T14:32:12.992+05:30  INFO 2876 --- [http-nio-8080-exec-2] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionController.getSessions(..)
+2023-09-13T14:32:12.993+05:30  INFO 2876 --- [http-nio-8080-exec-2] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionServiceImpl.getSessions(..)
+2023-09-13T14:32:13.025+05:30 ERROR 2876 --- [http-nio-8080-exec-2] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionServiceImpl.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:13.025+05:30 ERROR 2876 --- [http-nio-8080-exec-2] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionController.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:13.027+05:30  WARN 2876 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maveric.projectcharter.exception.ApiRequestException: NO SESSION FOUND]
+2023-09-13T14:32:14.854+05:30  INFO 2876 --- [http-nio-8080-exec-3] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionController.getSessions(..)
+2023-09-13T14:32:14.854+05:30  INFO 2876 --- [http-nio-8080-exec-3] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionServiceImpl.getSessions(..)
+2023-09-13T14:32:14.884+05:30 ERROR 2876 --- [http-nio-8080-exec-3] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionServiceImpl.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:14.884+05:30 ERROR 2876 --- [http-nio-8080-exec-3] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionController.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:14.886+05:30  WARN 2876 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maveric.projectcharter.exception.ApiRequestException: NO SESSION FOUND]
+2023-09-13T14:32:17.037+05:30  INFO 2876 --- [http-nio-8080-exec-4] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionController.getSessions(..)
+2023-09-13T14:32:17.038+05:30  INFO 2876 --- [http-nio-8080-exec-4] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionServiceImpl.getSessions(..)
+2023-09-13T14:32:17.069+05:30 ERROR 2876 --- [http-nio-8080-exec-4] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionServiceImpl.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:17.070+05:30 ERROR 2876 --- [http-nio-8080-exec-4] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionController.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:17.073+05:30  WARN 2876 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maveric.projectcharter.exception.ApiRequestException: NO SESSION FOUND]
+2023-09-13T14:32:18.655+05:30  INFO 2876 --- [http-nio-8080-exec-5] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionController.getSessions(..)
+2023-09-13T14:32:18.656+05:30  INFO 2876 --- [http-nio-8080-exec-5] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionServiceImpl.getSessions(..)
+2023-09-13T14:32:18.686+05:30 ERROR 2876 --- [http-nio-8080-exec-5] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionServiceImpl.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:18.686+05:30 ERROR 2876 --- [http-nio-8080-exec-5] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionController.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:32:18.690+05:30  WARN 2876 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maveric.projectcharter.exception.ApiRequestException: NO SESSION FOUND]
+2023-09-13T14:33:03.402+05:30  INFO 2876 --- [http-nio-8080-exec-6] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionController.getSessions(..)
+2023-09-13T14:33:03.408+05:30  INFO 2876 --- [http-nio-8080-exec-6] c.m.projectcharter.aop.LoggingAspect     : Executing: SessionServiceImpl.getSessions(..)
+2023-09-13T14:33:03.439+05:30 ERROR 2876 --- [http-nio-8080-exec-6] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionServiceImpl.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:33:03.440+05:30 ERROR 2876 --- [http-nio-8080-exec-6] c.m.projectcharter.aop.LoggingAspect     : Exception in: SessionController.getSessions(..). Exception: NO SESSION FOUND
+2023-09-13T14:33:03.442+05:30  WARN 2876 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maveric.projectcharter.exception.ApiRequestException: NO SESSION FOUND]
