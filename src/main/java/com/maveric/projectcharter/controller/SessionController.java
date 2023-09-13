@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@CrossOrigin(origins = Constants.CROSS_ORIGIN_URL)
+@CrossOrigin
 @Validated
 @RequestMapping(Constants.SESSION_MAPPING)
 public class SessionController {
